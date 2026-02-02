@@ -17,3 +17,6 @@ jobs:
 
       - name: Exécution du script Python
         run: python main.py
+
+      -name: Installation des dépendances
+      run: pip install -r requirements.txt
