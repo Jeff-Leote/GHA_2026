@@ -22,7 +22,7 @@ jobs:
         run: pip install fastapi locust pytest uvicorn coverage httpx pytest-mock pytest-profiling pylint sqlalchemy pydantic
 
       - name: Exécution des tests unitaires
-        run: pytest
+        run: coverage run -m pytest; coverage xml
 
       - name: Get Coverage
         uses: orgoro/coverage@v3.1
