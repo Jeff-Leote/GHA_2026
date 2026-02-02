@@ -1,6 +1,6 @@
 name: Build and Execute Python Script
 
-on: [push]
+on: [push, pull_request]
 
 jobs:
   tests:
